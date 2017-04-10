@@ -44,6 +44,7 @@ module.exports =
                 todo: /(?:\/\*|\/\/)[ ]*todo\:[ ]*(.+?)[ ]*(?:\*\/)?(?:[\r\n])/gmi
                 fixme: /(?:\/\*|\/\/)[ ]*fixme\:[ ]*(.+?)[ ]*(?:\*\/)?(?:[\r\n])/gmi
                 hack: /(?:\/\*|\/\/)[ ]*hack\:[ ]*(.+?)[ ]*(?:\*\/)?(?:[\r\n])/gmi
+                exportConst: /^[ \t]*(?:export const )([a-zA-Z0-9_]+)/gmi
                 express: /^[ \t]*(?:\w+\.)(?:get|post|put|patch|delete|all)(?:\(['"`])(.*)(?:['"`])/gm
                 test: /^[ \t]*(?:it|test|describe|before|beforeAll|beforeEach|after|afterEach|afterAll|)(?:\.only|\.skip)?(?:\(['"`])(.*)['"`]/gmi
         coffee:
